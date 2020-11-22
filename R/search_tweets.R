@@ -401,7 +401,7 @@ search_tweets_ <- function(q = "",
     if (grepl("full", query)) {
       params$maxResults <- 500 # The Twitter premium API allows up to 500 tweets per request 
     } else {
-      params$maxResults <- 100
+      params$maxResults <- 500
     }
     names(params)[1] <- "query"
     params$tweet_mode <- NULL
